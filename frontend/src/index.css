@@ -1,0 +1,1236 @@
+/* ============================================================
+   IBM Carbon Design System v11 — Design Tokens
+   Palette: White theme (cds-white)
+   Typography: IBM Plex Sans + IBM Plex Mono
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+/* ── Carbon color tokens (White theme) ──────────────────── */
+:root {
+  /* Backgrounds */
+  --cds-background:          #ffffff;
+  --cds-background-hover:    #e8e8e8;
+  --cds-background-active:   #c6c6c6;
+  --cds-layer-01:            #f4f4f4;
+  --cds-layer-02:            #ffffff;
+  --cds-layer-hover-01:      #e8e8e8;
+  --cds-layer-active-01:     #c6c6c6;
+
+  /* Borders */
+  --cds-border-subtle-00:    #e0e0e0;
+  --cds-border-subtle-01:    #c6c6c6;
+  --cds-border-strong-01:    #8d8d8d;
+  --cds-border-interactive:  #0f62fe;
+
+  /* Text */
+  --cds-text-primary:        #161616;
+  --cds-text-secondary:      #525252;
+  --cds-text-placeholder:    #a8a8a8;
+  --cds-text-disabled:       #c6c6c6;
+  --cds-text-on-color:       #ffffff;
+  --cds-text-inverse:        #ffffff;
+  --cds-text-helper:         #6f6f6f;
+
+  /* Interactive — IBM Blue 60 */
+  --cds-interactive:         #0f62fe;
+  --cds-focus:               #0f62fe;
+  --cds-focus-inset:         #ffffff;
+
+  /* Brand blues */
+  --cds-blue-10:  #edf5ff;
+  --cds-blue-20:  #d0e2ff;
+  --cds-blue-30:  #a6c8ff;
+  --cds-blue-40:  #78a9ff;
+  --cds-blue-50:  #4589ff;
+  --cds-blue-60:  #0f62fe;  /* Primary interactive */
+  --cds-blue-70:  #0043ce;
+  --cds-blue-80:  #002d9c;
+  --cds-blue-90:  #001d6c;
+  --cds-blue-100: #001141;
+
+  /* Support — Success (Green 50/60) */
+  --cds-support-success:       #24a148;
+  --cds-support-success-bg:    #defbe6;
+  --cds-support-success-hover: #198038;
+
+  /* Support — Warning (Yellow 30) */
+  --cds-support-warning:       #f1c21b;
+  --cds-support-warning-bg:    #fcf4d6;
+  --cds-support-warning-text:  #323232;
+
+  /* Support — Error (Red 60) */
+  --cds-support-error:         #da1e28;
+  --cds-support-error-bg:      #fff1f1;
+  --cds-support-error-hover:   #ba1b23;
+
+  /* Support — Info (Blue 70) */
+  --cds-support-info:          #0043ce;
+  --cds-support-info-bg:       #edf5ff;
+
+  /* Gray scale */
+  --cds-gray-10:  #f4f4f4;
+  --cds-gray-20:  #e0e0e0;
+  --cds-gray-30:  #c6c6c6;
+  --cds-gray-40:  #a8a8a8;
+  --cds-gray-50:  #8d8d8d;
+  --cds-gray-60:  #6f6f6f;
+  --cds-gray-70:  #525252;
+  --cds-gray-80:  #393939;
+  --cds-gray-90:  #262626;
+  --cds-gray-100: #161616;
+
+  /* Buttons */
+  --cds-button-primary:              #0f62fe;
+  --cds-button-primary-hover:        #0353e9;
+  --cds-button-primary-active:       #002d9c;
+  --cds-button-secondary:            #393939;
+  --cds-button-secondary-hover:      #4c4c4c;
+  --cds-button-danger:               #da1e28;
+  --cds-button-danger-hover:         #ba1b23;
+  --cds-button-ghost-color:          #0f62fe;
+  --cds-button-ghost-hover:          #e8e8e8;
+
+  /* Typography scale (Carbon type tokens) */
+  --cds-label-01-size:       0.75rem;   /* 12px */
+  --cds-label-01-weight:     400;
+  --cds-label-01-height:     1.33333;
+
+  --cds-helper-text-01-size: 0.75rem;
+  --cds-body-compact-01-size: 0.875rem; /* 14px */
+  --cds-body-compact-01-weight: 400;
+  --cds-body-compact-01-height: 1.28572;
+
+  --cds-body-01-size:        0.875rem;
+  --cds-body-01-weight:      400;
+  --cds-body-01-height:      1.42857;
+
+  --cds-heading-compact-01-size:   0.875rem; /* 14px bold */
+  --cds-heading-compact-01-weight: 600;
+  --cds-heading-compact-01-height: 1.28572;
+
+  --cds-heading-01-size:     1rem;      /* 16px */
+  --cds-heading-01-weight:   600;
+  --cds-heading-02-size:     1.25rem;   /* 20px */
+  --cds-heading-02-weight:   400;
+  --cds-heading-03-size:     1.5rem;    /* 24px */
+  --cds-heading-03-weight:   400;
+
+  --cds-fluid-heading-04-size: 1.75rem; /* 28px */
+  --cds-fluid-heading-05-size: 2rem;    /* 32px */
+
+  /* Spacing scale (base 8px / 0.5rem) */
+  --cds-spacing-01: 0.125rem;  /* 2px  */
+  --cds-spacing-02: 0.25rem;   /* 4px  */
+  --cds-spacing-03: 0.5rem;    /* 8px  */
+  --cds-spacing-04: 0.75rem;   /* 12px */
+  --cds-spacing-05: 1rem;      /* 16px */
+  --cds-spacing-06: 1.5rem;    /* 24px */
+  --cds-spacing-07: 2rem;      /* 32px */
+  --cds-spacing-08: 2.5rem;    /* 40px */
+  --cds-spacing-09: 3rem;      /* 48px */
+  --cds-spacing-10: 4rem;      /* 64px */
+
+  /* Shadows */
+  --cds-shadow:    0 2px 6px rgba(0,0,0,.2);
+  --cds-shadow-md: 0 4px 12px rgba(0,0,0,.15);
+
+  /* IBM Carbon uses 0 radius on most components — only 4px on tags/pills */
+  --cds-radius-sm: 4px;
+  --cds-radius-0:  0;
+}
+
+/* ── Dark mode — Carbon Gray 100 theme ──────────────────── */
+[data-theme="dark"] {
+  /* Backgrounds */
+  --cds-background:          #161616;
+  --cds-background-hover:    #353535;
+  --cds-background-active:   #525252;
+  --cds-layer-01:            #262626;
+  --cds-layer-02:            #393939;
+  --cds-layer-hover-01:      #353535;
+  --cds-layer-active-01:     #525252;
+
+  /* Borders */
+  --cds-border-subtle-00:    #393939;
+  --cds-border-subtle-01:    #525252;
+  --cds-border-strong-01:    #6f6f6f;
+  --cds-border-interactive:  #4589ff;
+
+  /* Text */
+  --cds-text-primary:        #f4f4f4;
+  --cds-text-secondary:      #c6c6c6;
+  --cds-text-placeholder:    #6f6f6f;
+  --cds-text-disabled:       #525252;
+  --cds-text-on-color:       #ffffff;
+  --cds-text-inverse:        #161616;
+  --cds-text-helper:         #8d8d8d;
+
+  /* Interactive — IBM Blue 40 on dark */
+  --cds-interactive:         #4589ff;
+  --cds-focus:               #ffffff;
+  --cds-focus-inset:         #161616;
+
+  /* Support tokens — dark adaptations */
+  --cds-support-success:       #42be65;
+  --cds-support-success-bg:    #071908;
+  --cds-support-success-hover: #24a148;
+  --cds-support-warning:       #f1c21b;
+  --cds-support-warning-bg:    #302400;
+  --cds-support-warning-text:  #f1c21b;
+  --cds-support-error:         #ff8389;
+  --cds-support-error-bg:      #2d0709;
+  --cds-support-error-hover:   #fa4d56;
+  --cds-support-info:          #4589ff;
+  --cds-support-info-bg:       #001d6c;
+
+  /* Buttons */
+  --cds-button-primary:              #0f62fe;
+  --cds-button-primary-hover:        #0353e9;
+  --cds-button-primary-active:       #002d9c;
+  --cds-button-secondary:            #6f6f6f;
+  --cds-button-secondary-hover:      #606060;
+  --cds-button-ghost-color:          #78a9ff;
+  --cds-button-ghost-hover:          #353535;
+
+  /* Shadows stronger on dark */
+  --cds-shadow:    0 2px 6px rgba(0,0,0,.5);
+  --cds-shadow-md: 0 4px 12px rgba(0,0,0,.45);
+}
+
+/* ── Dark mode login overrides ───────────────────────────── */
+[data-theme="dark"] .login-left  { background: #0d0d0d; }
+[data-theme="dark"] .login-right { background: #0043ce; }
+[data-theme="dark"] .login-card h1 { color: #f4f4f4; }
+[data-theme="dark"] .login-card p.sub { color: #c6c6c6; }
+[data-theme="dark"] .login-card .field input {
+  background: #262626;
+  border-color: #525252;
+  color: #f4f4f4;
+}
+[data-theme="dark"] .login-card .field input:focus {
+  outline-color: #ffffff;
+}
+[data-theme="dark"] .login-foot { color: #8d8d8d; }
+
+/* ── Reset ──────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--cds-layer-01);
+  color: var(--cds-text-primary);
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: var(--cds-body-compact-01-size);
+  line-height: var(--cds-body-compact-01-height);
+  -webkit-font-smoothing: antialiased;
+}
+h1,h2,h3,h4 {
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+}
+button { font-family: inherit; cursor: pointer; }
+input, select, textarea { font-family: inherit; }
+
+/* ── Focus ring (Carbon standard) ───────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--cds-focus);
+  outline-offset: 2px;
+}
+
+/* ── Toast ─────────────────────────────────────────────── */
+.toast-wrap {
+  position: fixed; bottom: var(--cds-spacing-06); left: 50%;
+  transform: translateX(-50%); z-index: 9000;
+  display: flex; flex-direction: column; gap: var(--cds-spacing-03);
+  align-items: center; pointer-events: none;
+}
+.toast {
+  background: var(--cds-gray-90);
+  color: var(--cds-text-inverse);
+  padding: var(--cds-spacing-04) var(--cds-spacing-05);
+  font-size: var(--cds-body-compact-01-size);
+  font-weight: 400;
+  display: flex; align-items: center; gap: var(--cds-spacing-03);
+  box-shadow: var(--cds-shadow-md);
+  border-left: 4px solid var(--cds-blue-40);
+  min-width: 280px;
+  animation: toast-in .15s ease-out;
+  pointer-events: all;
+}
+.toast.danger {
+  border-left-color: var(--cds-support-error);
+  background: var(--cds-gray-90);
+}
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── Carbon Tag / Serial tag ────────────────────────────── */
+.tag {
+  display: inline-flex; align-items: center; gap: var(--cds-spacing-02);
+  padding: 0 var(--cds-spacing-04);
+  height: 1.5rem;
+  background: var(--cds-blue-10);
+  border: 1px solid var(--cds-blue-20);
+  color: var(--cds-blue-70);
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  border-radius: var(--cds-radius-sm);
+  cursor: pointer;
+}
+.tag:hover {
+  background: var(--cds-blue-20);
+}
+
+/* ── Carbon Badges (inline status indicators) ───────────── */
+.badge {
+  display: inline-flex; align-items: center; gap: var(--cds-spacing-02);
+  padding: 0 var(--cds-spacing-03);
+  height: 1.25rem;
+  border-radius: var(--cds-radius-sm);
+  font-size: 0.75rem; font-weight: 400;
+  white-space: nowrap;
+}
+.badge::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%; flex: none;
+}
+.badge.ok      { background: var(--cds-support-success-bg); color: var(--cds-support-success-hover); }
+.badge.ok::before { background: var(--cds-support-success); }
+.badge.warn    { background: var(--cds-support-warning-bg); color: var(--cds-support-warning-text); }
+.badge.warn::before { background: #f1c21b; }
+.badge.danger  { background: var(--cds-support-error-bg); color: var(--cds-support-error); }
+.badge.danger::before { background: var(--cds-support-error); }
+.badge.neutral { background: var(--cds-gray-20); color: var(--cds-gray-70); }
+.badge.neutral::before { background: var(--cds-gray-50); }
+
+/* ── Carbon Buttons ─────────────────────────────────────── */
+/* Carbon buttons: 0 radius, 48px height standard / 32px sm */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: var(--cds-spacing-03);
+  height: 2rem; /* 32px — sm size */
+  padding: 0 var(--cds-spacing-05);
+  border: 1px solid transparent;
+  border-radius: 0;
+  font-size: var(--cds-body-compact-01-size);
+  font-weight: 400;
+  letter-spacing: 0.16px;
+  transition: background 70ms, border-color 70ms, color 70ms;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.btn-primary {
+  background: var(--cds-button-primary);
+  color: var(--cds-text-on-color);
+  border-color: var(--cds-button-primary);
+}
+.btn-primary:hover  { background: var(--cds-button-primary-hover); border-color: var(--cds-button-primary-hover); }
+.btn-primary:active { background: var(--cds-button-primary-active); }
+.btn-primary:disabled { background: var(--cds-gray-30); color: var(--cds-gray-50); cursor: not-allowed; border-color: transparent; }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--cds-button-ghost-color);
+  border-color: transparent;
+}
+.btn-ghost:hover  { background: var(--cds-button-ghost-hover); }
+.btn-ghost:active { background: var(--cds-layer-active-01); }
+
+.btn-secondary {
+  background: var(--cds-button-secondary);
+  color: var(--cds-text-on-color);
+  border-color: var(--cds-button-secondary);
+}
+.btn-secondary:hover { background: var(--cds-button-secondary-hover); }
+
+.btn-danger-ghost {
+  background: transparent;
+  color: var(--cds-support-error);
+  border-color: transparent;
+}
+.btn-danger-ghost:hover { background: var(--cds-support-error-bg); }
+
+/* Icon button (32×32) */
+.icon-btn {
+  width: 2rem; height: 2rem;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: transparent; border: 1px solid transparent;
+  color: var(--cds-text-secondary);
+  border-radius: 0;
+  transition: background 70ms;
+}
+.icon-btn:hover  { background: var(--cds-layer-hover-01); color: var(--cds-text-primary); }
+.icon-btn:active { background: var(--cds-layer-active-01); }
+.icon-btn.danger:hover { background: var(--cds-support-error-bg); color: var(--cds-support-error); }
+
+/* ── Carbon Form fields ─────────────────────────────────── */
+.field { margin-bottom: var(--cds-spacing-05); }
+.field label {
+  display: block;
+  font-size: var(--cds-label-01-size);
+  font-weight: 400;
+  color: var(--cds-text-secondary);
+  margin-bottom: var(--cds-spacing-02);
+  letter-spacing: 0.32px;
+}
+.field input, .field select, .field textarea {
+  width: 100%;
+  height: 2.5rem; /* 40px — md size */
+  padding: 0 var(--cds-spacing-05);
+  border: none;
+  border-bottom: 1px solid var(--cds-border-strong-01);
+  border-radius: 0;
+  background: var(--cds-layer-01);
+  color: var(--cds-text-primary);
+  font-size: var(--cds-body-compact-01-size);
+  outline: none;
+  transition: background 70ms;
+}
+.field textarea {
+  height: auto;
+  padding: var(--cds-spacing-03) var(--cds-spacing-05);
+  resize: vertical;
+}
+.field input:focus, .field select:focus, .field textarea:focus {
+  outline: 2px solid var(--cds-focus);
+  outline-offset: -2px;
+  background: var(--cds-background);
+}
+.field input::placeholder, .field textarea::placeholder {
+  color: var(--cds-text-placeholder);
+}
+
+/* ── Eyebrow / overline ──────────────────────────────────── */
+.eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.6875rem; /* 11px */
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cds-blue-60);
+  font-weight: 500;
+}
+
+/* ── Login — two-column IBM Enterprise layout ───────────── */
+.view-login {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+
+/* Left panel — dark #262626 */
+.login-left {
+  flex: 0 0 52%;
+  background: var(--cds-gray-90);
+  display: flex;
+  flex-direction: column;
+  padding: var(--cds-spacing-07) var(--cds-spacing-09);
+  min-height: 100vh;
+}
+.login-logo { margin-bottom: var(--cds-spacing-10); }
+.login-form-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 420px;
+}
+.login-card { width: 100%; }
+
+.login-card h1 {
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: var(--cds-text-inverse);
+  margin-bottom: var(--cds-spacing-03);
+  line-height: 1.1;
+}
+.login-card p.sub {
+  color: var(--cds-gray-40);
+  font-size: var(--cds-body-compact-01-size);
+  margin: 0 0 var(--cds-spacing-07);
+  line-height: 1.5;
+}
+
+/* Fields on dark bg */
+.login-card .field label {
+  color: var(--cds-gray-30);
+  font-size: 0.75rem;
+}
+.field-required::after {
+  content: ' *';
+  color: var(--cds-support-error);
+}
+.login-card .field input {
+  background: var(--cds-gray-80);
+  border: 1px solid var(--cds-gray-60);
+  border-radius: 0;
+  color: var(--cds-text-inverse);
+  height: 3rem;
+  padding: 0 var(--cds-spacing-05);
+  font-size: 0.875rem;
+}
+.login-card .field input::placeholder { color: var(--cds-gray-50); }
+.login-card .field input:focus {
+  background: var(--cds-gray-70);
+  outline: 2px solid var(--cds-blue-40);
+  outline-offset: -2px;
+  border-color: transparent;
+}
+
+.login-card .btn-primary {
+  width: 100%;
+  height: 3rem;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: var(--cds-spacing-06);
+  background: var(--cds-blue-60);
+  letter-spacing: 0.16px;
+}
+.login-card .btn-primary:hover { background: var(--cds-blue-70); }
+
+.login-foot {
+  margin-top: var(--cds-spacing-05);
+  font-size: 0.875rem;
+  color: var(--cds-blue-40);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+}
+.login-foot:hover { text-decoration: underline; }
+
+/* Right panel — IBM Blue 60 hero */
+.login-right {
+  flex: 0 0 48%;
+  background: var(--cds-blue-60);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--cds-spacing-09);
+  position: relative;
+  overflow: hidden;
+}
+.login-right::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+.login-hero { position: relative; z-index: 1; }
+.login-hero h2 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: var(--cds-text-inverse);
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+.login-hero h2 strong {
+  font-weight: 600;
+  display: block;
+}
+.login-hero p {
+  font-size: 1rem;
+  color: rgba(255,255,255,.75);
+  margin-top: var(--cds-spacing-04);
+  line-height: 1.5;
+  max-width: 320px;
+}
+
+@media (max-width: 768px) {
+  .view-login { flex-direction: column; }
+  .login-left  { flex: none; min-height: auto; padding: var(--cds-spacing-06); }
+  .login-right { flex: none; min-height: 220px; padding: var(--cds-spacing-06); }
+  .login-right::before { display: none; }
+  .login-hero h2 { font-size: 2rem; }
+}
+
+/* ── App shell ───────────────────────────────────────────── */
+.app { display: flex; min-height: 100vh; }
+
+/* ── Sidebar — Carbon UI Shell Left Panel ────────────────── */
+.sidebar {
+  width: 256px; flex: none;
+  background: var(--cds-gray-100); /* #161616 — Carbon shell header bg */
+  color: var(--cds-text-inverse);
+  display: flex; flex-direction: column;
+  padding: 0;
+  position: sticky; top: 0; height: 100vh;
+  border-right: 1px solid var(--cds-gray-80);
+}
+.brand {
+  display: flex; align-items: center; gap: var(--cds-spacing-04);
+  padding: var(--cds-spacing-05) var(--cds-spacing-05);
+  height: 3rem; /* 48px — Carbon header height */
+  border-bottom: 1px solid var(--cds-gray-80);
+  background: var(--cds-gray-100);
+}
+.brand-mark {
+  /* IBM 8-bar logo placeholder */
+  width: 1.5rem; height: 1.5rem; flex: none;
+  background: var(--cds-blue-40);
+  display: flex; align-items: center; justify-content: center;
+}
+.brand-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 600; font-size: 0.875rem;
+  color: var(--cds-text-inverse);
+}
+.brand-text small {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400; font-size: 0.6875rem;
+  color: var(--cds-gray-40);
+  letter-spacing: 0.05em;
+}
+.nav-group-label {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.6875rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--cds-gray-40);
+  padding: var(--cds-spacing-05) var(--cds-spacing-05) var(--cds-spacing-02);
+}
+.nav-item {
+  display: flex; align-items: center; gap: var(--cds-spacing-04);
+  padding: 0 var(--cds-spacing-05);
+  height: 2.5rem; /* 40px */
+  color: var(--cds-gray-30);
+  font-size: 0.875rem; font-weight: 400;
+  text-decoration: none;
+  transition: background 70ms, color 70ms;
+  border-left: 4px solid transparent;
+}
+.nav-item svg { flex: none; opacity: .8; }
+.nav-item:hover {
+  background: var(--cds-gray-80);
+  color: var(--cds-text-inverse);
+}
+.nav-item.active {
+  background: var(--cds-gray-90);
+  color: var(--cds-text-inverse);
+  border-left-color: var(--cds-blue-40); /* Carbon active indicator */
+  font-weight: 600;
+}
+.nav-item.active svg { opacity: 1; }
+
+.sidebar-foot {
+  margin-top: auto;
+  border-top: 1px solid var(--cds-gray-80);
+}
+.user-chip {
+  display: flex; align-items: center; gap: var(--cds-spacing-04);
+  padding: var(--cds-spacing-04) var(--cds-spacing-05);
+}
+.user-avatar {
+  width: 2rem; height: 2rem;
+  background: var(--cds-blue-60);
+  color: var(--cds-text-on-color);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 600; font-size: 0.75rem;
+  flex: none; border-radius: 50%;
+}
+.user-meta { overflow: hidden; }
+.user-meta .name {
+  font-size: 0.875rem; font-weight: 600;
+  color: var(--cds-text-inverse);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.user-meta .role {
+  font-size: 0.75rem; color: var(--cds-gray-40);
+}
+.logout-link {
+  display: flex; align-items: center; gap: var(--cds-spacing-04);
+  color: var(--cds-gray-30); font-size: 0.75rem;
+  padding: var(--cds-spacing-04) var(--cds-spacing-05);
+  background: none; border: none; width: 100%;
+  cursor: pointer; transition: background 70ms;
+  border-top: 1px solid var(--cds-gray-80);
+}
+.logout-link:hover { background: var(--cds-gray-80); color: var(--cds-text-inverse); }
+
+/* ── Main content area ───────────────────────────────────── */
+.main {
+  flex: 1; min-width: 0;
+  padding: var(--cds-spacing-07) var(--cds-spacing-08) var(--cds-spacing-10);
+  background: var(--cds-layer-01);
+}
+
+/* ── Page header (topbar) ────────────────────────────────── */
+.topbar {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: var(--cds-spacing-05);
+  margin-bottom: var(--cds-spacing-06);
+  flex-wrap: wrap;
+  padding-bottom: var(--cds-spacing-05);
+  border-bottom: 1px solid var(--cds-border-subtle-00);
+}
+.topbar h2 {
+  font-size: var(--cds-fluid-heading-04-size); /* 28px */
+  font-weight: 400; color: var(--cds-text-primary);
+  line-height: 1.2;
+}
+.topbar p {
+  color: var(--cds-text-secondary);
+  font-size: var(--cds-body-compact-01-size);
+  margin-top: var(--cds-spacing-02);
+}
+.topbar-actions { display: flex; gap: var(--cds-spacing-03); align-items: center; }
+
+/* Carbon Search */
+.search-box { position: relative; }
+.search-box input {
+  width: 240px; height: 2rem;
+  padding: 0 var(--cds-spacing-05) 0 2.25rem;
+  border: none; border-bottom: 1px solid var(--cds-border-strong-01);
+  border-radius: 0;
+  background: var(--cds-layer-02);
+  font-size: var(--cds-body-compact-01-size);
+  color: var(--cds-text-primary);
+  outline: none;
+}
+.search-box input:focus {
+  outline: 2px solid var(--cds-focus);
+  outline-offset: -2px;
+  background: var(--cds-background);
+}
+.search-box svg {
+  position: absolute; left: var(--cds-spacing-03);
+  top: 50%; transform: translateY(-50%);
+  color: var(--cds-text-secondary); pointer-events: none;
+}
+
+/* ── Stats cards ─────────────────────────────────────────── */
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--cds-spacing-05);   /* 16px gap — cards float separately */
+  margin-bottom: var(--cds-spacing-07);   /* 32px — breathing room before filters */
+}
+.stat-card {
+  background: var(--cds-layer-02);
+  border: 1px solid var(--cds-border-subtle-01);
+  border-top: 3px solid var(--stat-color, var(--cds-blue-60));
+  padding: var(--cds-spacing-05) var(--cds-spacing-06);
+  border-radius: 0;   /* Carbon tiles are sharp-cornered */
+  overflow: hidden;   /* clips the accent bar cleanly */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.stat-card .n {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 2.875rem; /* ~46px */
+  font-weight: 600;
+  color: var(--cds-text-primary);
+  line-height: 1;
+  margin-bottom: var(--cds-spacing-02);
+}
+.stat-card .l {
+  font-size: 0.8125rem; /* ~13px */
+  font-weight: 700;
+  color: var(--cds-text-secondary);
+  letter-spacing: 0.16px;
+}
+
+/* ── Filter chips ────────────────────────────────────────── */
+.filter-row {
+  display: flex; gap: var(--cds-spacing-04);
+  padding-top: var(--cds-spacing-05);
+  border-top: 1px solid var(--cds-border-subtle-01);
+  margin-bottom: var(--cds-spacing-05); flex-wrap: wrap;
+  align-items: flex-end;
+  row-gap: var(--cds-spacing-05);
+}
+
+/* Filter group label — shown above each chip cluster */
+.filter-group {
+  display: flex; flex-direction: column; gap: 4px;
+}
+.filter-group-label {
+  font-size: 10px; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--cds-text-placeholder);
+  font-family: var(--cds-code-01-font-family, monospace);
+  line-height: 1;
+  padding-left: 2px;
+}
+.filter-group-chips {
+  display: flex; flex-wrap: wrap; gap: var(--cds-spacing-02);
+  align-items: center;
+}
+.filter-divider {
+  width: 1px; height: 28px; flex-shrink: 0;
+  background: var(--cds-border-subtle-01);
+  margin: 0 4px;
+  align-self: flex-end;
+  margin-bottom: 2px;
+}
+.chip {
+  height: 1.5rem;
+  padding: 0 var(--cds-spacing-04);
+  border-radius: var(--cds-radius-sm);
+  border: 1px solid var(--cds-border-subtle-01);
+  background: var(--cds-layer-02);
+  font-size: 0.75rem; font-weight: 400;
+  color: var(--cds-text-secondary);
+  cursor: pointer; transition: background 70ms;
+}
+.chip:hover  { background: var(--cds-layer-hover-01); }
+.chip.active {
+  background: var(--cds-gray-100);
+  color: var(--cds-text-inverse);
+  border-color: var(--cds-gray-100);
+  font-weight: 600;
+}
+
+/* ── Carbon Data Table ───────────────────────────────────── */
+.panel {
+  background: var(--cds-layer-02);
+  border: 1px solid var(--cds-border-subtle-00);
+}
+/* Base table styles — shared by all tables */
+table { width: 100%; border-collapse: collapse; }
+thead th {
+  text-align: left;
+  font-size: 0.75rem; font-weight: 600;
+  letter-spacing: 0.32px;
+  color: var(--cds-text-secondary);
+  text-transform: uppercase;
+  padding: var(--cds-spacing-04) var(--cds-spacing-05);
+  border-bottom: 1px solid var(--cds-border-subtle-01);
+  background: var(--cds-layer-01);
+  white-space: nowrap;
+}
+tbody td {
+  padding: var(--cds-spacing-04) var(--cds-spacing-05);
+  border-bottom: 1px solid var(--cds-border-subtle-00);
+  font-size: var(--cds-body-compact-01-size);
+  vertical-align: middle;
+}
+tbody tr:last-child td { border-bottom: none; }
+tbody tr { transition: background 70ms; }
+tbody tr:hover td { background: var(--cds-layer-hover-01); }
+
+/* ── Laptops table — fixed layout, 7 cols, rows never wrap ─ */
+/* Serie | Modelo | Empleado | Disponib. | Prep. | Comodato | Acciones */
+.laptops-table { table-layout: fixed; min-width: 860px; }
+.laptops-table thead th:nth-child(1) { width: 128px; }
+.laptops-table thead th:nth-child(2) { width: 140px; }
+.laptops-table thead th:nth-child(3) { width: auto;  }
+.laptops-table thead th:nth-child(4) { width: 118px; }
+.laptops-table thead th:nth-child(5) { width: 130px; }
+.laptops-table thead th:nth-child(6) { width: 96px;  }
+.laptops-table thead th:nth-child(7) { width: 108px; }
+.laptops-table tbody td { overflow: hidden; }
+
+/* ── BIOS table — fixed layout, 7 cols ─────────────────────  */
+/* Serial | Model | Employee | BIOS pwd | BT | IPv6 | Actions */
+.bios-table { table-layout: fixed; width: 100%; }
+.bios-table thead th:nth-child(1) { width: 118px; } /* Serial */
+.bios-table thead th:nth-child(2) { width: 160px; } /* Model  */
+.bios-table thead th:nth-child(3) { width: auto;  } /* Employee — toma el espacio sobrante */
+.bios-table thead th:nth-child(4) { width: 130px; } /* BIOS password */
+.bios-table thead th:nth-child(5) { width: 100px; } /* BT in BIOS */
+.bios-table thead th:nth-child(6) { width: 130px; } /* IPv6 */
+.bios-table thead th:nth-child(7) { width: 80px; text-align: right; } /* Actions */
+.bios-table tbody td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ── Reports table — fixed layout, 8 cols ──────────────────  */
+/* Type | Serial | Brand/Model | Owner | Geography | Availability | Employee | Notes */
+.reports-table { table-layout: fixed; }
+.reports-table thead th:nth-child(1) { width: 90px;  }  /* Type */
+.reports-table thead th:nth-child(2) { width: 140px; }  /* Serial */
+.reports-table thead th:nth-child(3) { width: 160px; }  /* Brand / Model */
+.reports-table thead th:nth-child(4) { width: 68px;  }  /* Owner */
+.reports-table thead th:nth-child(5) { width: 130px; }  /* Geography */
+.reports-table thead th:nth-child(6) { width: 110px; }  /* Availability */
+.reports-table thead th:nth-child(7) { width: auto;  }  /* Employee — fills remaining */
+.reports-table thead th:nth-child(8) { width: 160px; }  /* Notes */
+.reports-table tbody td { overflow: hidden; }
+
+/* ── Billing table — fixed layout, 8 cols ──────────────────  */
+/* Número | Cliente | Concepto | Monto | Estado | Emisión | Vencimiento | Acciones */
+.billing-table { table-layout: fixed; }
+.billing-table thead th:nth-child(1) { width: 110px; }  /* Número */
+.billing-table thead th:nth-child(2) { width: auto;  }  /* Cliente — fills remaining */
+.billing-table thead th:nth-child(3) { width: 160px; }  /* Concepto */
+.billing-table thead th:nth-child(4) { width: 100px; }  /* Monto */
+.billing-table thead th:nth-child(5) { width: 100px; }  /* Estado */
+.billing-table thead th:nth-child(6) { width: 88px;  }  /* Emisión */
+.billing-table thead th:nth-child(7) { width: 100px; }  /* Vencimiento */
+.billing-table thead th:nth-child(8) { width: 108px; }  /* Acciones */
+.billing-table tbody td { overflow: hidden; }
+
+/* ── Links (WAN/ISP) table ───────────────────────────────── */
+.links-table { table-layout: fixed; width: 100%; }
+.links-table thead th:nth-child(1) { width: 110px; }  /* Company */
+.links-table thead th:nth-child(2) { width: 110px; }  /* Type */
+.links-table thead th:nth-child(3) { width: 148px; }  /* Public IP */
+.links-table thead th:nth-child(4) { width: 148px; }  /* IP */
+.links-table thead th:nth-child(5) { width: 110px; }  /* Velocity */
+.links-table thead th:nth-child(6) { width: auto;  }  /* Contract — fills remaining */
+.links-table thead th:nth-child(7) { width: auto;  }  /* Contact — fills remaining */
+.links-table thead th:nth-child(8) { width: 108px; }  /* Actions */
+.links-table tbody td { overflow: hidden; }
+
+/* ── Equipment table — fixed layout, 8 cols ──────────────────  */
+/* Serie | Tipo | Marca/Modelo | Empleado | Disponib. | Prep. | Comodato | Acciones */
+.equipment-table { table-layout: fixed; width: 100%; }
+.equipment-table thead th:nth-child(1) { width: 116px; }  /* Serie */
+.equipment-table thead th:nth-child(2) { width: 108px; }  /* Tipo */
+.equipment-table thead th:nth-child(3) { width: 17%;   }  /* Marca / Modelo */
+.equipment-table thead th:nth-child(4) { width: 18%;   }  /* Empleado — flexible */
+.equipment-table thead th:nth-child(5) { width: 112px; }  /* Disponibilidad */
+.equipment-table thead th:nth-child(6) { width: 120px; }  /* Preparación */
+.equipment-table thead th:nth-child(7) { width: 92px;  }  /* Comodato */
+.equipment-table thead th:nth-child(8) { width: 100px; }  /* Acciones */
+.equipment-table tbody td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ── Computers table — fixed layout, 8 cols (same widths as equipment-table) ── */
+/* Serie | Tipo | Marca/Modelo | Empleado | Disponib. | Prep. | Comodato | Acciones */
+.computers-table { table-layout: fixed; width: 100%; }
+.computers-table thead th:nth-child(1) { width: 116px; }
+.computers-table thead th:nth-child(2) { width: 108px; }
+.computers-table thead th:nth-child(3) { width: 17%;   }
+.computers-table thead th:nth-child(4) { width: 18%;   }
+.computers-table thead th:nth-child(5) { width: 112px; }
+.computers-table thead th:nth-child(6) { width: 120px; }
+.computers-table thead th:nth-child(7) { width: 92px;  }
+.computers-table thead th:nth-child(8) { width: 100px; }
+.computers-table tbody td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ── Peripherals table — fixed layout, 7 cols (no Preparación) ──────────────── */
+/* Serie | Tipo | Marca/Modelo | Empleado | Disponib. | Comodato | Acciones */
+.peripherals-table { table-layout: fixed; width: 100%; }
+.peripherals-table thead th:nth-child(1) { width: 116px; }
+.peripherals-table thead th:nth-child(2) { width: 108px; }
+.peripherals-table thead th:nth-child(3) { width: 17%;   }
+.peripherals-table thead th:nth-child(4) { width: 20%;   }
+.peripherals-table thead th:nth-child(5) { width: 112px; }
+.peripherals-table thead th:nth-child(6) { width: 92px;  }
+.peripherals-table thead th:nth-child(7) { width: 100px; }
+.peripherals-table tbody td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* ── EPD table — 7 cols ─────────────────────────────────────────────────── */
+/* Empleado | Correo IBM | Equipo | Hostname | Ubicación | Dueño | Acciones */
+.epd-table { table-layout: fixed; width: 100%; }
+.epd-table thead th:nth-child(1) { width: 14%;   }  /* Empleado */
+.epd-table thead th:nth-child(2) { width: 19%;   }  /* Correo IBM */
+.epd-table thead th:nth-child(3) { width: 17%;   }  /* Equipo */
+.epd-table thead th:nth-child(4) { width: 18%;   }  /* Hostname */
+.epd-table thead th:nth-child(5) { width: 9%;    }  /* Ubicación */
+.epd-table thead th:nth-child(6) { width: 90px;  }  /* Dueño */
+.epd-table thead th:nth-child(7) { width: 120px; }  /* Acciones */
+.epd-table tbody td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* Celdas que permiten wrap */
+.epd-table tbody td:nth-child(1),
+.epd-table tbody td:nth-child(3) { white-space: normal; }
+/* Dueño y Acciones: sin recorte */
+.epd-table tbody td:nth-child(6),
+.epd-table tbody td:nth-child(7) { overflow: visible; }
+/* Más espacio entre iconos de acción en EPD */
+.epd-table .row-actions { gap: var(--cds-spacing-03); }
+/* Correo: romper en @ para evitar overflow */
+.epd-email {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.6875rem;
+  color: var(--cds-text-secondary);
+  word-break: break-all;
+  display: block;
+}
+
+.row-model  {
+  font-weight: 600;
+  color: var(--cds-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.row-variant {
+  color: var(--cds-text-secondary);
+  font-size: 0.6875rem;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-top: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.row-employee {
+  color: var(--cds-text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  max-width: 100%;
+}
+.row-employee.empty { color: var(--cds-text-placeholder); font-style: italic; }
+.row-actions { display: flex; gap: var(--cds-spacing-01); justify-content: flex-end; align-items: center; }
+.empty-state {
+  padding: var(--cds-spacing-10) var(--cds-spacing-06);
+  text-align: center; color: var(--cds-text-secondary);
+}
+
+/* ── Carbon Modal / Overlay ──────────────────────────────── */
+.overlay {
+  position: fixed; inset: 0;
+  background: rgba(22,22,22,.7); /* Carbon overlay */
+  z-index: 9000;
+  display: flex; align-items: flex-start; justify-content: center;
+  padding: 5vh var(--cds-spacing-05); overflow: auto;
+}
+.modal {
+  width: 100%; max-width: 672px; /* Carbon lg modal */
+  background: var(--cds-background);
+  border: 1px solid var(--cds-border-subtle-00);
+  border-radius: 0;
+  box-shadow: 0 12px 32px 4px rgba(0,0,0,.4);
+  overflow: hidden;
+}
+.modal-head {
+  padding: var(--cds-spacing-05) var(--cds-spacing-06) 0;
+  border-bottom: 1px solid var(--cds-border-subtle-00);
+  background: var(--cds-background);
+}
+.modal-head-top {
+  display: flex; justify-content: space-between; align-items: flex-start;
+}
+.modal-title-row {
+  display: flex; align-items: center; gap: var(--cds-spacing-04); flex-wrap: wrap;
+}
+.modal-head h3 {
+  font-size: 1.25rem; font-weight: 400;
+  color: var(--cds-text-primary);
+}
+.modal-close {
+  background: none; border: none;
+  color: var(--cds-text-secondary);
+  font-size: 1.25rem; line-height: 1;
+  padding: var(--cds-spacing-03); cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  width: 2.5rem; height: 2.5rem;
+  transition: background 70ms;
+}
+.modal-close:hover { background: var(--cds-layer-hover-01); }
+.modal-sub {
+  color: var(--cds-text-secondary);
+  font-size: 0.875rem;
+  margin-top: var(--cds-spacing-02);
+  margin-bottom: var(--cds-spacing-04);
+}
+.tabs {
+  display: flex; gap: 0;
+  border-bottom: none;
+  margin-top: var(--cds-spacing-04);
+}
+.tab {
+  padding: var(--cds-spacing-04) var(--cds-spacing-05);
+  font-size: 0.875rem; font-weight: 400;
+  color: var(--cds-text-secondary);
+  border-bottom: 2px solid transparent;
+  border-top: none; border-left: none; border-right: none;
+  background: none; cursor: pointer;
+  transition: color 70ms, border-color 70ms;
+  white-space: nowrap;
+}
+.tab:hover { color: var(--cds-text-primary); }
+.tab.active {
+  color: var(--cds-text-primary);
+  border-bottom-color: var(--cds-blue-60); /* Carbon tab underline */
+  font-weight: 600;
+}
+.modal-body {
+  padding: var(--cds-spacing-06);
+  max-height: 55vh; overflow: auto;
+  background: var(--cds-layer-01);
+}
+.spec-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--cds-spacing-05) var(--cds-spacing-06);
+}
+.spec-item .l {
+  font-size: 0.6875rem; text-transform: uppercase;
+  letter-spacing: 0.04em; color: var(--cds-text-helper);
+  margin-bottom: var(--cds-spacing-01); font-weight: 400;
+}
+.spec-item .v { font-size: 0.875rem; font-weight: 400; color: var(--cds-text-primary); }
+.spec-item .v.mono { font-family: 'IBM Plex Mono', monospace; }
+.spec-item.full { grid-column: 1 / -1; }
+.spec-item input, .spec-item select {
+  width: 100%; height: 2rem;
+  padding: 0 var(--cds-spacing-04);
+  border: none; border-bottom: 1px solid var(--cds-border-strong-01);
+  border-radius: 0;
+  background: var(--cds-layer-02);
+  font-size: 0.875rem; color: var(--cds-text-primary);
+  outline: none;
+}
+.spec-item input:focus, .spec-item select:focus {
+  outline: 2px solid var(--cds-focus); outline-offset: -2px;
+}
+.spec-note {
+  margin-top: var(--cds-spacing-06);
+  padding-top: var(--cds-spacing-05);
+  border-top: 1px solid var(--cds-border-subtle-00);
+}
+.spec-note .l {
+  font-size: 0.6875rem; text-transform: uppercase;
+  letter-spacing: 0.04em; color: var(--cds-text-helper);
+  margin-bottom: var(--cds-spacing-03);
+}
+.spec-note p { font-size: 0.875rem; color: var(--cds-text-secondary); margin: 0; }
+.spec-note textarea {
+  width: 100%; min-height: 72px;
+  padding: var(--cds-spacing-03) var(--cds-spacing-04);
+  border: none; border-bottom: 1px solid var(--cds-border-strong-01);
+  border-radius: 0;
+  background: var(--cds-layer-02);
+  font-size: 0.875rem; resize: vertical;
+  color: var(--cds-text-primary); outline: none;
+}
+.spec-note textarea:focus { outline: 2px solid var(--cds-focus); outline-offset: -2px; }
+
+.modal-foot {
+  display: flex; justify-content: flex-end; align-items: center;
+  gap: var(--cds-spacing-03);
+  padding: var(--cds-spacing-04) var(--cds-spacing-06);
+  border-top: 1px solid var(--cds-border-subtle-00);
+  background: var(--cds-layer-02);
+}
+/* Left-side footer buttons */
+.modal-foot .left { display: flex; gap: var(--cds-spacing-03); margin-right: auto; }
+.modal-foot .right { display: flex; gap: var(--cds-spacing-03); }
+
+/* ── Carbon Timeline (history) ───────────────────────────── */
+.timeline { list-style: none; margin: 0; padding: 0; }
+.timeline li {
+  display: flex; gap: var(--cds-spacing-05);
+  padding-bottom: var(--cds-spacing-05); position: relative;
+}
+.timeline li:not(:last-child)::before {
+  content: ''; position: absolute;
+  left: 5px; top: 16px; bottom: 0;
+  width: 1px; background: var(--cds-border-subtle-01);
+}
+.t-dot {
+  width: 11px; height: 11px; border-radius: 50%;
+  background: var(--cds-blue-60); flex: none; margin-top: 3px;
+  border: 2px solid var(--cds-blue-20);
+}
+.t-body { flex: 1; }
+.t-head {
+  display: flex; gap: var(--cds-spacing-03);
+  align-items: center; flex-wrap: wrap;
+  margin-bottom: var(--cds-spacing-01);
+}
+.t-date {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.6875rem; color: var(--cds-text-helper);
+}
+.t-emp { font-size: 0.875rem; font-weight: 600; color: var(--cds-text-primary); }
+.t-note { font-size: 0.75rem; color: var(--cds-text-secondary); margin-top: 2px; }
+
+/* ── Role pills ──────────────────────────────────────────── */
+.role-pill {
+  padding: 0 var(--cds-spacing-03);
+  height: 1.25rem;
+  display: inline-flex; align-items: center;
+  border-radius: var(--cds-radius-sm);
+  font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.02em;
+}
+.role-pill.admin   { background: #e8daff; color: #6929c4; }  /* IBM Purple 20 / 70 */
+.role-pill.manager { background: var(--cds-blue-10); color: var(--cds-blue-70); }
+.role-pill.viewer  { background: var(--cds-gray-20); color: var(--cds-gray-70); }
+
+/* ── Reports — Notes column ──────────────────────────────── */
+.col-notes {
+  width: 200px;
+  max-width: 200px;
+  /* Hard-clip the cell so no child can overflow the table */
+  overflow: hidden;
+}
+/* Legacy span — kept in case referenced elsewhere */
+.report-notes {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--cds-text-primary);
+  font-size: var(--cds-body-compact-01-size);
+  cursor: default;
+}
+.report-notes-empty {
+  color: var(--cds-text-placeholder);
+  font-size: var(--cds-body-compact-01-size);
+  font-style: italic;
+}
+/* Note preview button — looks like a plain text cell but is interactive */
+.note-preview-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  color: inherit;
+}
+.note-preview-btn:hover .note-preview-text {
+  color: var(--cds-link-primary);
+  text-decoration: underline;
+}
+.note-preview-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* Fallback for browsers without -webkit-line-clamp */
+  max-height: 2.8em;
+  font-size: var(--cds-body-compact-01-size);
+  color: var(--cds-text-primary);
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  line-height: 1.4;
+}
+.note-see-link {
+  display: inline-block;
+  font-size: 0.6875rem;
+  color: var(--cds-link-primary);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.note-see-link:hover {
+  text-decoration: underline;
+}
+.note-preview-empty {
+  font-size: var(--cds-body-compact-01-size);
+  color: var(--cds-text-placeholder);
+  font-style: italic;
+}
+.reports-error {
+  color: var(--cds-support-error);
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 1056px) {
+  .stats-row { grid-template-columns: repeat(2,1fr); }
+  .sidebar { display: none; }
+  .main { padding: var(--cds-spacing-05); }
+}

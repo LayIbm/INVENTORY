@@ -1,0 +1,43 @@
+COMMODATUM GENERATOR — INPUT FIELDS LIST
+(comodatoGUI_v6.pyw)
+==========================================
+
+DEVICE INFORMATION
+------------------
+1.  Description          — Type of device (e.g. Laptop, Tiny PC, Monitor, Headset, Keyboard, Mouse, N/A)
+2.  Type                 — Device category or form factor (e.g. Laptop, Desktop)
+3.  Model                — Brand and model (e.g. ThinkPad T14 Gen 3)
+4.  Serial *             — Device serial number [REQUIRED]
+5.  OS (Laptop/Tiny PC)  — Operating system (e.g. Windows 11 Pro) [REQUIRED only when Description is Laptop or Tiny PC]
+
+EMPLOYEE INFORMATION
+--------------------
+6.  Name *               — Full name of the employee receiving the device [REQUIRED]
+7.  Employee #           — Employee identification / badge number
+8.  Employee Email (To)* — Recipient email address(es); multiple separated by ; or , [REQUIRED]
+9.  Manager Email (CC)   — Manager email address(es) for CC; multiple separated by ; or ,
+
+AGREEMENT METADATA
+------------------
+10. Date                 — Agreement date in YYYY-MM-DD format (defaults to today)
+11. Location             — Office location: Guadalajara (default) or CDMX
+
+ACCESSORIES & PERIPHERALS
+--------------------------
+12. Includes charger & power cable  — Checkbox (default: checked)
+13. Monitor                         — Checkbox (included peripheral)
+14. Headset                         — Checkbox (included peripheral)
+15. Keyboard                        — Checkbox (included peripheral)
+16. Mouse                           — Checkbox (included peripheral)
+17. Other                           — Free-text field for any other peripheral
+18. None / N/A                      — Checkbox; disables and clears all peripheral fields above
+
+FILE & OUTPUT SETTINGS
+-----------------------
+19. Extra PDF to attach  — Optional path to an existing .PDF file to attach alongside the generated agreement
+20. Output folder        — Directory where output files are saved (defaults to script's folder)
+
+==========================================
+Fields marked with * are REQUIRED.
+Fields 13-17 are disabled when "None / N/A" (field 18) is checked.
+Field 5 (OS) is only enabled when Description (field 1) is set to Laptop or Tiny PC.
